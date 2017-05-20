@@ -13,7 +13,7 @@ namespace WindowsFormsApplication6
     public partial class Administrator : Form
     {
         public Administrator()
-        {
+        { 
             InitializeComponent();
             pictureBox1.Image = Image.FromFile(@"C:\Users\xy\Desktop\iPlan Resources\iPlan.jpg");
 
