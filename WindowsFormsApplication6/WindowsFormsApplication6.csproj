@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{861BEA5F-D040-43E4-BAE4-0B2C2C2398B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication6</RootNamespace>
+    <AssemblyName>WindowsFormsApplication6</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add.Designer.cs" />
+    <Compile Include="AddHomework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHomework.Designer.cs" />
+    <Compile Include="Administrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator.Designer.cs" />
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs" />
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs" />
+    <Compile Include="HomeworksExams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeworksExams.Designer.cs" />
+    <Compile Include="iPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iPlan.Designer.cs" />
+    <Compile Include="LoginSuccessful.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginSuccessful.Designer.cs" />
+    <Compile Include="Notes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notes.Designer.cs">
+      <DependentUpon>Notes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveStudents.Designer.cs" />
+    <Compile Include="SavedNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SavedNotes.Designer.cs">
+      <DependentUpon>SavedNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="See Existing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="See Existing.Designer.cs" />
+    <Compile Include="SeeHomework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeHomework.Designer.cs" />
+    <Compile Include="StudyingSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudyingSchedule.Designer.cs">
+      <DependentUpon>StudyingSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewNote.Designer.cs">
+      <DependentUpon>NewNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add.resx" />
+    <EmbeddedResource Include="AddHomework.resx" />
+    <EmbeddedResource Include="Administrator.resx" />
+    <EmbeddedResource Include="AdminLogin.resx" />
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Form2.resx" />
+    <EmbeddedResource Include="HomeworksExams.resx" />
+    <EmbeddedResource Include="iPlan.resx" />
+    <EmbeddedResource Include="LoginSuccessful.resx" />
+    <EmbeddedResource Include="Notes.resx">
+      <DependentUpon>Notes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveStudents.resx" />
+    <EmbeddedResource Include="SavedNotes.resx">
+      <DependentUpon>SavedNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="See Existing.resx" />
+    <EmbeddedResource Include="SeeHomework.resx" />
+    <EmbeddedResource Include="StudyingSchedule.resx">
+      <DependentUpon>StudyingSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewNote.resx">
+      <DependentUpon>NewNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iPlan icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iPlan icon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iPlan icon2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
